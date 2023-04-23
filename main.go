@@ -73,8 +73,8 @@ func main() {
 		_, err = fmt.Scanln(&to)
 		if err != nil { log.Fatalln(err) }
 	}
+	fmt.Println("Welcome to Hampshire Solar Downtime Monitor")
 	for {
-		fmt.Println("Welcome to Hampshire Solar Downtime Monitor")
 		if(time.Now().Minute() < 5) {
 			time.Sleep(time.Minute * 5)
 		}
